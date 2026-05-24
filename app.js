@@ -17,3 +17,18 @@ function adminLoginNow(id, password){
   }
   return false;
 }
+<!-- Team section designed by Mila -->
+
+<div class="team-container">
+  <div class="team-card">
+    <h3>Md Tauhidul Amin</h3>
+    <p>Backend Developer</p>
+    <p>Firebase, Authentication, Database Workflow</p>
+  </div>
+
+  <div class="team-card">
+    <h3>Mila</h3>
+    <p>Frontend Developer</p>
+    <p>UI/UX Design, Homepage, Room Details, Dashboard</p>
+  </div>
+</div>
