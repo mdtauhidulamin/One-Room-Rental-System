@@ -385,3 +385,17 @@ footer{
   transform: translateY(-5px);
 }
 
+/* Login UI improved by Mila */
+
+.login-container{
+    width:300px;
+    margin:auto;
+    padding:20px;
+    border-radius:10px;
+    background:#f5f5f5;
+}
+
+button{
+    background:blue;
+    color:white;
+}
