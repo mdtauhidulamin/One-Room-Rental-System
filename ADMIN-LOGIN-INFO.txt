@@ -1,0 +1,6 @@
+Admin login fixed:
+ID: admin
+Password: admin123
+
+Use VS Code Live Server to open admin-login.html or index.html.
+Firebase config is still required for real-time data sync.

@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Admin Login</title><link rel="stylesheet" href="style.css"></head><body class="login-body"><div class="login-card"><h1 data-i18n="adminLogin">Admin Login</h1><p>Admin can control website settings, accounts, rooms, and requests.</p><input id="adminId" placeholder="Admin ID"><input id="adminPassword" type="password" placeholder="Password"><button onclick="loginAdmin()">Login</button><a href="index.html">Back to Home</a><p id="message"></p></div><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script><script src="firebase-config.js"></script><script src="app.js"></script><script>
+function loginAdmin(){
+  if(adminLoginNow(adminId.value, adminPassword.value)){
+    return;
+  }
+  message.textContent = "Invalid admin login.";
+}
+</script></body></html>
