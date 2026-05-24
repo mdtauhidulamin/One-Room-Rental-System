@@ -17,6 +17,7 @@ function adminLoginNow(id, password){
   }
   return false;
 }
+Mila_Team_Section_UI
 <!-- Team section designed by Mila -->
 
 <div class="team-container">
@@ -32,3 +33,32 @@ function adminLoginNow(id, password){
     <p>UI/UX Design, Homepage, Room Details, Dashboard</p>
   </div>
 </div>
+
+
+// Authentication system by Amin
+
+function loginUser(email, password) {
+    console.log("User login system initialized");
+
+    // Firebase authentication logic placeholder
+}
+
+// Multilingual language system by Amin
+
+function changeLanguage(lang) {
+    if (lang === "en") {
+        alert("Language changed to English");
+    } else if (lang === "ko") {
+        alert("한국어로 변경되었습니다");
+    }
+}
+// Firebase database workflow by Amin
+
+function saveRoomData(roomTitle, rent, address) {
+    console.log("Room data saved:", roomTitle, rent, address);
+}
+
+function saveRentRequest(userName, roomId) {
+    console.log("Rent request submitted:", userName, roomId);
+}
+main
