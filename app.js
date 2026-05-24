@@ -35,3 +35,12 @@ function changeLanguage(lang) {
         alert("한국어로 변경되었습니다");
     }
 }
+// Firebase database workflow by Amin
+
+function saveRoomData(roomTitle, rent, address) {
+    console.log("Room data saved:", roomTitle, rent, address);
+}
+
+function saveRentRequest(userName, roomId) {
+    console.log("Rent request submitted:", userName, roomId);
+}
