@@ -399,3 +399,16 @@ button{
     background:blue;
     color:white;
 }
+
+/* Multilingual UI enhancement by Mila */
+
+.language-switch button{
+    background:#2563eb;
+    color:white;
+    transition:0.3s;
+}
+
+.language-switch button:hover{
+    background:#1e40af;
+    transform:scale(1.05);
+}
