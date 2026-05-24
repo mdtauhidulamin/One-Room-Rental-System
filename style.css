@@ -423,6 +423,19 @@ Mila_Multilingual_UI
     transform:scale(1.05);
 }
 
+Mila_Homepage_UI_Redesign
+/* Homepage redesign by Mila */
+
+.hero-section h1{
+    color:#1e3a8a;
+    font-weight:700;
+}
+
+.hero-section p{
+    font-size:18px;
+}
+
 main
 main
  main
+main
