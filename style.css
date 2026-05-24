@@ -1,1 +1,367 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}body{background:#f4f7fb;color:#1f2937}.navbar{background:#102a43;color:white;padding:16px 7%;display:flex;align-items:center;gap:25px;position:sticky;top:0;z-index:10}.logo{display:flex;align-items:center;gap:10px;min-width:250px}.logo img{width:54px;height:54px;object-fit:cover}.logo strong{font-size:22px;line-height:1.15}.nav-links{margin-left:auto;display:flex;align-items:center;gap:16px;flex-wrap:nowrap}.nav-links a{color:white;text-decoration:none;font-weight:bold;white-space:nowrap}.login-btn,.profile-btn{border:1px solid rgba(255,255,255,.65);padding:8px 12px;border-radius:8px}.logout-btn{background:#dc2626;color:white;border:0;border-radius:8px;padding:9px 12px;font-weight:bold;cursor:pointer}.language-dropdown{display:inline-flex;align-items:center;position:relative}.lang-globe{width:42px;height:42px;border:1.5px solid white;border-radius:50%;background:transparent;color:white;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center}.language-menu{display:none;position:absolute;right:0;top:48px;background:#102a43;border:1px solid rgba(255,255,255,.3);border-radius:12px;overflow:hidden;min-width:130px;z-index:99}.language-menu button{width:100%;padding:12px;border:0;background:transparent;color:white;font-weight:bold;text-align:left;cursor:pointer}.language-dropdown:hover .language-menu{display:block}.hero{min-height:430px;background:linear-gradient(rgba(16,42,67,.72),rgba(16,42,67,.72)),url('assets/placeholder.svg');background-size:cover;background-position:center;color:white;display:flex;align-items:center;padding:7%}.hero h1{font-size:52px;margin-bottom:18px}.hero p{font-size:19px;line-height:1.7;margin-bottom:10px}.btn,.room-card button,.login-card button,.dash-card button,.form-card button,.admin-card button{display:inline-block;background:#f59e0b;color:#102a43;border:0;padding:12px 18px;border-radius:10px;font-weight:bold;text-decoration:none;cursor:pointer;margin-top:12px}.section{padding:55px 7%}.section h2{text-align:center;font-size:34px;margin-bottom:25px}.top-note{text-align:center;color:#475569;margin-bottom:20px}.filter-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:25px}.filter-buttons button{background:#102a43;color:white;border:0;padding:11px 16px;border-radius:10px;font-weight:bold;cursor:pointer}.filter-buttons button.active,.filter-buttons button:hover{background:#f59e0b;color:#102a43}.room-grid,.dashboard-list,.admin-grid,.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:26px}.room-card,.dash-card,.form-card,.admin-card,.team-card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 10px 25px rgba(15,23,42,.12)}.room-card img{width:100%;height:230px;object-fit:cover}.room-info,.dash-card,.form-card,.admin-card,.team-card{padding:20px}.room-info h3,.dash-card h3,.admin-card h3,.team-card h3{font-size:22px;margin:12px 0}.room-info p,.dash-card p,.team-card p{margin:9px 0;line-height:1.5}.status{display:inline-block;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:bold}.available{background:#dcfce7;color:#166534}.not-available{background:#fee2e2;color:#991b1b}.pending{background:#fef3c7;color:#92400e}.accepted{background:#dcfce7;color:#166534}.denied{background:#fee2e2;color:#991b1b}.about,.team-section{background:white;margin:0 7% 30px;border-radius:20px;box-shadow:0 10px 25px rgba(15,23,42,.08);padding:55px 7%}.about p{text-align:center;font-size:18px;line-height:1.8}.team-section h2{text-align:center;font-size:34px;margin-bottom:12px}.team-subtitle{text-align:center;font-size:18px;color:#475569;margin-bottom:30px}.team-card{text-align:center}.team-card img{width:115px;height:115px;border-radius:50%;object-fit:cover;border:5px solid #e2e8f0;margin-bottom:16px}footer{background:#102a43;color:white;text-align:center;padding:25px;line-height:1.8}.login-body{min-height:100vh;display:flex;justify-content:center;align-items:center;background:#dbeafe;padding:30px}.login-card{width:430px;background:white;padding:35px;border-radius:18px;box-shadow:0 10px 25px rgba(15,23,42,.15);text-align:center}.login-card input,.form-card input,.form-card select,.form-card textarea,.admin-card input,.admin-card textarea{width:100%;padding:13px;margin:10px 0;border:1px solid #cbd5e1;border-radius:10px}.form-card textarea,.admin-card textarea{height:90px}.danger-btn{background:#dc2626!important;color:white!important}.success-btn{background:#16a34a!important;color:white!important}.secondary-btn{background:#102a43!important;color:white!important}.preview-img{width:100%;max-height:230px;object-fit:cover;border-radius:12px;margin:10px 0;border:1px solid #dbeafe}.admin-table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;box-shadow:0 10px 25px rgba(15,23,42,.08);margin-bottom:25px}.admin-table th,.admin-table td{padding:12px;border-bottom:1px solid #e5e7eb;text-align:left;font-size:14px}.admin-table th{background:#102a43;color:white}.admin-mini-img{width:70px;height:55px;object-fit:cover;border-radius:8px}.config-warning{background:#fee2e2;color:#991b1b;padding:14px 7%;font-weight:bold;text-align:center}@media(max-width:1000px){.navbar{flex-wrap:wrap}.nav-links{margin-left:0;flex-wrap:wrap}.logo{min-width:unset}.hero h1{font-size:36px}}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+body{
+    background:#f4f7fb;
+    color:#1f2937
+}
+.navbar{
+    background:#102a43;
+    color:white;
+    padding:16px 7%;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    position:sticky;
+    top:0;
+    z-index:10
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-width:250px
+}
+.logo img{
+    width:54px;
+    height:54px;
+    object-fit:cover
+}
+.logo strong{
+    font-size:22px;
+    line-height:1.15
+}
+.nav-links{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    flex-wrap:nowrap
+}
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    white-space:nowrap
+}
+.login-btn,.profile-btn{
+    border:1px solid rgba(255,255,255,.65);
+    padding:8px 12px;
+    border-radius:8px
+}
+.logout-btn{
+    background:#dc2626;
+    color:white;
+    border:0;
+    border-radius:8px;
+    padding:9px 12px;
+    font-weight:bold;
+    cursor:pointer
+}
+.language-dropdown{
+    display:inline-flex;
+    align-items:center;
+    position:relative
+}
+.lang-globe{
+    width:42px;
+    height:42px;
+    border:1.5px solid white;
+    border-radius:50%;
+    background:transparent;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.language-menu{
+    display:none;
+    position:absolute;
+    right:0;
+    top:48px;
+    background:#102a43;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:12px;
+    overflow:hidden;
+    min-width:130px;
+    z-index:99
+}
+.language-menu button{
+    width:100%;
+    padding:12px;
+    border:0;
+    background:transparent;
+    color:white;
+    font-weight:bold;
+    text-align:left;
+    cursor:pointer
+}
+.language-dropdown:hover .language-menu{
+    display:block
+}
+.hero{
+    min-height:430px;
+    background:linear-gradient(rgba(16,42,67,.72),rgba(16,42,67,.72)),url('assets/placeholder.svg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:7%
+}
+.hero h1{
+    font-size:52px;
+    margin-bottom:18px
+}
+.hero p{
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:10px
+}
+.btn,.room-card button,.login-card button,.dash-card button,.form-card button,.admin-card button{
+    display:inline-block;
+    background:#f59e0b;
+    color:#102a43;
+    border:0;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+    margin-top:12px
+}
+.section{
+    padding:55px 7%
+}
+.section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:25px
+}
+
+.room-card{
+   transition: 0.3s ease;
+}
+
+.room-card:hover{
+   transform: translateY(-8px);
+}
+
+.top-note{
+    text-align:center;
+    color:#475569;
+    margin-bottom:20px
+}
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:25px
+}
+.filter-buttons button{
+    background:#102a43;
+    color:white;
+    border:0;
+    padding:11px 16px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer
+}
+.filter-buttons button.active,.filter-buttons button:hover{
+    background:#f59e0b;
+    color:#102a43
+}
+.room-grid,.dashboard-list,.admin-grid,.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+    gap:26px
+}
+.room-card,.dash-card,.form-card,.admin-card,.team-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(15,23,42,.12)
+}
+.room-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover
+}
+.room-info,.dash-card,.form-card,.admin-card,.team-card{
+    padding:20px
+}
+.room-info h3,.dash-card h3,.admin-card h3,.team-card h3{
+    font-size:22px;
+    margin:12px 0
+}
+.room-info p,.dash-card p,.team-card p{
+    margin:9px 0;
+    line-height:1.5
+}
+.status{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:bold
+}
+.available{
+    background:#dcfce7;
+    color:#166534
+}
+.not-available{
+    background:#fee2e2;
+    color:#991b1b
+}
+.pending{
+    background:#fef3c7;
+    color:#92400e
+}
+.accepted{
+    background:#dcfce7;
+    color:#166534
+}
+.denied{
+    background:#fee2e2;
+    color:#991b1b
+}
+.about,.team-section{
+    background:white;
+    margin:0 7% 30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+    padding:55px 7%
+}
+.about p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8
+}
+.team-section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:12px
+}
+.team-subtitle{
+    text-align:center;
+    font-size:18px;
+    color:#475569;
+    margin-bottom:30px
+}
+.team-card{
+    text-align:center
+}
+.team-card img{
+    width:115px;
+    height:115px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #e2e8f0;
+    margin-bottom:16px
+}
+footer{
+    background:#102a43;
+    color:white;
+    text-align:center;
+    padding:25px;
+    line-height:1.8
+}
+.login-body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#dbeafe;
+    padding:30px
+}
+.login-card{
+    width:430px;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(15,23,42,.15);
+    text-align:center
+}
+.login-card input,.form-card input,.form-card select,.form-card textarea,.admin-card input,.admin-card textarea{
+    width:100%;
+    padding:13px;
+    margin:10px 0;
+    border:1px solid #cbd5e1;
+    border-radius:10px
+}
+.form-card textarea,.admin-card textarea{
+    height:90px
+}
+.danger-btn{
+    background:#dc2626!important;
+    color:white!important
+}
+.success-btn{
+    background:#16a34a!important;
+    color:white!important
+}
+.secondary-btn{
+    background:#102a43!important;
+    color:white!important
+}
+.preview-img{
+    width:100%;
+    max-height:230px;
+    object-fit:cover;
+    border-radius:12px;
+    margin:10px 0;
+    border:1px solid #dbeafe
+}
+.admin-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+    margin-bottom:25px
+}
+.admin-table th,.admin-table td{
+    padding:12px;
+    border-bottom:1px solid #e5e7eb;
+    text-align:left;
+    font-size:14px
+}
+.admin-table th{
+    background:#102a43;
+    color:white
+}
+.admin-mini-img{
+    width:70px;
+    height:55px;
+    object-fit:cover;
+    border-radius:8px
+}
+.config-warning{
+    background:#fee2e2;
+    color:#991b1b;
+    padding:14px 7%;
+    font-weight:bold;
+    text-align:center
+}
+@media(max-width:1000px){
+    .navbar{
+        flex-wrap:wrap
+    }
+    .nav-links{
+        margin-left:0;
+        flex-wrap:wrap
+    }
+    .logo{
+        min-width:unset
+    }
+    .hero h1{
+        font-size:36px
+    }
+}
