@@ -17,6 +17,23 @@ function adminLoginNow(id, password){
   }
   return false;
 }
+Mila_Team_Section_UI
+<!-- Team section designed by Mila -->
+
+<div class="team-container">
+  <div class="team-card">
+    <h3>Md Tauhidul Amin</h3>
+    <p>Backend Developer</p>
+    <p>Firebase, Authentication, Database Workflow</p>
+  </div>
+
+  <div class="team-card">
+    <h3>Mila</h3>
+    <p>Frontend Developer</p>
+    <p>UI/UX Design, Homepage, Room Details, Dashboard</p>
+  </div>
+</div>
+
 
 // Authentication system by Amin
 
@@ -44,3 +61,4 @@ function saveRoomData(roomTitle, rent, address) {
 function saveRentRequest(userName, roomId) {
     console.log("Rent request submitted:", userName, roomId);
 }
+main
