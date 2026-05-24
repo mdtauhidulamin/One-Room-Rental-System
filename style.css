@@ -412,3 +412,14 @@ button{
     background:#1e40af;
     transform:scale(1.05);
 }
+
+/* Homepage redesign by Mila */
+
+.hero-section h1{
+    color:#1e3a8a;
+    font-weight:700;
+}
+
+.hero-section p{
+    font-size:18px;
+}
