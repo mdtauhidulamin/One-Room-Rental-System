@@ -8,3 +8,5 @@ const firebaseConfig = {
   appId: "1:699642154304:web:53a0783fee3f86e0ad7ea5",
   measurementId: "G-5DHBX3693Z"
 };
+console.log("Firebase configuration loaded by Amin");
+// Firebase integrated by Amin
