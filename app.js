@@ -17,3 +17,21 @@ function adminLoginNow(id, password){
   }
   return false;
 }
+
+// Authentication system by Amin
+
+function loginUser(email, password) {
+    console.log("User login system initialized");
+
+    // Firebase authentication logic placeholder
+}
+
+// Multilingual language system by Amin
+
+function changeLanguage(lang) {
+    if (lang === "en") {
+        alert("Language changed to English");
+    } else if (lang === "ko") {
+        alert("한국어로 변경되었습니다");
+    }
+}
