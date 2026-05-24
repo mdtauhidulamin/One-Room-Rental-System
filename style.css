@@ -365,3 +365,23 @@ footer{
         font-size:36px
     }
 }
+
+/* UI Enhancement by Mila */
+
+.student-dashboard {
+  padding: 20px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
