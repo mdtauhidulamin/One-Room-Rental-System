@@ -17,3 +17,11 @@ function adminLoginNow(id, password){
   }
   return false;
 }
+
+// Authentication system by Amin
+
+function loginUser(email, password) {
+    console.log("User login system initialized");
+
+    // Firebase authentication logic placeholder
+}
