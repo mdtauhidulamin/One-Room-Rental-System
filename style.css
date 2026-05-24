@@ -435,7 +435,24 @@ Mila_Homepage_UI_Redesign
     font-size:18px;
 }
 
+Mila_Room_Details_UI
+/* Room details redesign by Mila */
+
+.room-details-card{
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.availability-badge{
+    background:#22c55e;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+}
+
 main
 main
- main
+main
+main
 main
